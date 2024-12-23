@@ -4,8 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Saas } from "@/components/Saas";
 import { useState } from "react";
 import { SelfHosted } from "@/components/SelfHosted";
+import { useNavigate } from "react-router-dom";
 export default function SignIn() {
   const [state, setState] = useState(0);
+  const navigate = useNavigate();
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 h-screen w-screen  bg-[#FAFAFA] items-center justify-center">
       <div className="hidden lg:block col-span-1">
@@ -47,6 +49,7 @@ export default function SignIn() {
         </div>
         <p className="flex justify-center">
           By signing up you agree to the <span className="font-bold">&nbsp;Privacy Policy</span>
+          <button onClick={()=> navigate("/repo")}>Click Me</button>
         </p>
       </div>
     </div>
