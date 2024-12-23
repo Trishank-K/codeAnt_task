@@ -1,7 +1,7 @@
-import { Github } from "@/assets/gitHub";
-import { BitBucket } from "@/assets/bitBucket";
-import { Azure } from "@/assets/azure_devops";
-import { GitLab } from "@/assets/gitLab";
+import { Github } from "@/assets/Icons/gitHub";
+import { BitBucket } from "@/assets/Icons/bitBucket";
+import { Azure } from "@/assets/Icons/azure_devops";
+import { GitLab } from "@/assets/Icons/gitLab";
 
 export const Saas = () => {
   return (

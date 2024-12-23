@@ -1,6 +1,7 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import './App.css'
 import SignIn from './Pages/SignIn'
+import { Repo } from './Pages/Repo'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<SignIn/>}/>
+        <Route path='/repo' element={<Repo/>}/>
       </Routes>
       </BrowserRouter>
     </>

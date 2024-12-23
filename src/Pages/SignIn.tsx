@@ -1,5 +1,5 @@
 import image from "@/assets/signIn_Left.png";
-import CodeAnt from "@/assets/codeAnt_Icon";
+import CodeAnt from "@/assets/Icons/codeAnt_Icon";
 import { Button } from "@/components/ui/button";
 import { Saas } from "@/components/Saas";
 import { useState } from "react";
@@ -15,7 +15,7 @@ export default function SignIn() {
         <div className=" bg-white border border-gray-200 rounded-xl shadow-sm shadow-gray-300">
           <div className="w-full flex flex-col px-6 justify-center items-center py-9">
             <div className="flex justify-center items-center mb-9">
-              <CodeAnt />{" "}
+              <CodeAnt />
               <div className=" font-satoshi text-3xl">CodeAnt AI</div>
             </div>
             <div className="font-inter font-semibold text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-5">

@@ -1,5 +1,5 @@
-import { GitLab } from "@/assets/gitLab";
-import { SSO } from "@/assets/SSO";
+import { GitLab } from "@/assets/Icons/gitLab";
+import { SSO } from "@/assets/Icons/SSO";
 
 export const SelfHosted = () => {
   return (
