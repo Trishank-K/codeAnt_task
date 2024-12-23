@@ -10,6 +10,12 @@ export default function SignIn() {
   const navigate = useNavigate();
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 h-screen w-screen  bg-[#FAFAFA] items-center justify-center">
+      <button
+        className=" border fixed top-4 p-2 rounded-lg"
+        onClick={() => navigate("/repo")}
+      >
+        Repo Page
+      </button>
       <div className="hidden lg:block col-span-1">
         <img src={image} className="object-contain" alt="img" />
       </div>
@@ -48,8 +54,8 @@ export default function SignIn() {
           </div>
         </div>
         <p className="flex justify-center">
-          By signing up you agree to the <span className="font-bold">&nbsp;Privacy Policy</span>
-          <button onClick={()=> navigate("/repo")}>Click Me</button>
+          By signing up you agree to the{" "}
+          <span className="font-bold">&nbsp;Privacy Policy</span>
         </p>
       </div>
     </div>
