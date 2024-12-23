@@ -7,18 +7,18 @@ import { SelfHosted } from "@/components/SelfHosted";
 export default function SignIn() {
   const [state, setState] = useState(0);
   return (
-    <div className="grid grid-cols-2 bg-[#FAFAFA] items-center">
-      <div className="col-span-1">
-        <img src={image} className="object-fill " alt="img" />
+    <div className="grid grid-cols-1 lg:grid-cols-2 h-screen w-screen  bg-[#FAFAFA] items-center justify-center">
+      <div className="hidden lg:block col-span-1">
+        <img src={image} className="object-contain" alt="img" />
       </div>
-      <div className="flex flex-col px-6 col-span-1 gap-8">
+      <div className="flex flex-col items-center justify-center p-6 col-span-1 gap-8">
         <div className=" bg-white border border-gray-200 rounded-xl shadow-sm shadow-gray-300">
           <div className="w-full flex flex-col px-6 justify-center items-center py-9">
             <div className="flex justify-center items-center mb-9">
               <CodeAnt />{" "}
               <div className=" font-satoshi text-3xl">CodeAnt AI</div>
             </div>
-            <div className="font-inter font-semibold text-5xl mb-5">
+            <div className="font-inter font-semibold text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-5">
               Welcome to CodeAnt AI
             </div>
             <div className="flex w-full">
@@ -40,7 +40,7 @@ export default function SignIn() {
               </Button>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-4 border-t py-6 min-h-[340px] border-gray-200">
+          <div className="flex flex-col items-center gap-4 border-t py-6 min-h-[330px] border-gray-200">
             {state == 0 && <Saas />}
             {state == 1 && <SelfHosted />}
           </div>

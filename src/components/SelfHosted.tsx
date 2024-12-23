@@ -1,15 +1,20 @@
-import { Card } from "./ui/card";
 import { GitLab } from "@/assets/gitLab";
 import { SSO } from "@/assets/SSO";
 
 export const SelfHosted = () => {
   return (
     <>
-      <button className="w-full flex justify-center">
-        <Card icon=<GitLab /> text="Sign In with GitLab" />
+      <button className=" w-2/3 p-4 flex border border-gray-300 gap-4 justify-center rounded-lg">
+        <GitLab />
+        <div className="font-inter font-semibold text-base">
+          Sign In with GitLab
+        </div>
       </button>
-      <button className="w-full flex justify-center">
-        <Card icon=<SSO /> text="Sign In with SSO" />
+      <button className=" w-2/3 p-4 flex border border-gray-300 gap-4 justify-center rounded-lg">
+        <SSO />
+        <div className="font-inter font-semibold text-base">
+          Sign In with SSO
+        </div>
       </button>
     </>
   );

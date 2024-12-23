@@ -1,5 +1,4 @@
 import { Github } from "@/assets/gitHub";
-import { Card } from "./ui/card";
 import { BitBucket } from "@/assets/bitBucket";
 import { Azure } from "@/assets/azure_devops";
 import { GitLab } from "@/assets/gitLab";
@@ -7,17 +6,29 @@ import { GitLab } from "@/assets/gitLab";
 export const Saas = () => {
   return (
     <>
-      <button className="w-full flex justify-center">
-        <Card icon=<Github /> text="Sign In with Github" />
+      <button className=" w-2/3 p-4 flex border border-gray-300 gap-4 justify-center rounded-lg">
+        <Github />
+        <div className="font-inter font-semibold text-base">
+          Sign In To Github
+        </div>
       </button>
-      <button className="w-full flex justify-center">
-        <Card icon=<BitBucket /> text="Sign In with Bitbucket" />
+      <button className=" w-2/3 p-4 flex border border-gray-300 gap-4 justify-center rounded-lg">
+        <BitBucket />
+        <div className="font-inter font-semibold text-base">
+          Sign In with Bitbucket
+        </div>
       </button>
-      <button className="w-full flex justify-center">
-        <Card icon=<Azure /> text="Sign In with Azure Devops" />
+      <button className=" w-2/3 p-4 flex border border-gray-300 gap-4 justify-center rounded-lg">
+        <Azure />
+        <div className="font-inter font-semibold text-base">
+          Sign In with Azure Devops
+        </div>
       </button>
-      <button className="w-full flex justify-center">
-        <Card icon=<GitLab /> text="Sign In with GitLab" />
+      <button className=" w-2/3 p-4 flex border border-gray-300 gap-4 justify-center rounded-lg">
+        <GitLab />
+        <div className="font-inter font-semibold text-base">
+          Sign In with GitLab
+        </div>
       </button>
     </>
   );
