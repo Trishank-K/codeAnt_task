@@ -9,7 +9,7 @@ export const Saas = () => {
       <button className=" w-2/3 p-4 flex border border-gray-300 gap-4 justify-center rounded-lg">
         <Github />
         <div className="font-inter font-semibold text-base">
-          Sign In To Github
+          Sign In with Github
         </div>
       </button>
       <button className=" w-2/3 p-4 flex border border-gray-300 gap-4 justify-center rounded-lg">
