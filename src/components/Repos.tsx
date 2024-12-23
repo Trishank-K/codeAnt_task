@@ -22,11 +22,11 @@ export const Repos = () => {
             </p>
           </div>
           <div className="relative top-4 lg:top-0 flex gap-2 lg:pt-0 ">
-            <button className="border-[2px] flex py-2 lg:py-0 items-center gap-2 border-gray-300 rounded-lg px-4 lg:px-8">
+            <button className="border-[2px] flex py-2 hover:bg-gray-100 lg:py-0 items-center gap-2 border-gray-300 rounded-lg px-4 lg:px-8">
               <Refresh />
               <p>Refresh All</p>
             </button>
-            <button className="bg-blue-600 flex items-center gap-2 text-white rounded-lg px-2 lg:px-4">
+            <button className="bg-blue-600 hover:bg-blue-700 flex items-center gap-2 text-white rounded-lg px-2 lg:px-4">
               <Add />
               <p>Add Repository</p>
             </button>
